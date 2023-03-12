@@ -10,7 +10,11 @@
     'description': """Hospital management system""",
     'depends': ["base"],
     'data': [
-        "security/ir.model.access.csv",
-        "views/hospital_view.xml"],
+        # "security/ir.model.access.csv",
+        # "views/hospital_view.xml"
+    ],
     'license': 'LGPL-3',
+    "application": True,
+    "installable": True,
+    "auto-install": False
 }
