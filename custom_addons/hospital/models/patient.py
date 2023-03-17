@@ -12,7 +12,7 @@ class HospitalPatient(models.Model):
         ('male', 'Male'),
         ('female', 'Female'),
         ('other', 'Other'),
-    ], required=True, default='male')
+    ], string="Gender", required=True, default='male')
     note = fields.Text(string='Description')
 
     @api.depends('date_of_birth')
